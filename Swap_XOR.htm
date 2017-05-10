@@ -7,18 +7,9 @@
 <script>
 
 function Button1_onclick() {
-  
-	//var userName = txt1.value;
-	//userName = "Hello! " + userName;
-	//txt2.value = userName;
-
-  var iNumber1 = new Number(txt1.value);
-  var iNumber2 = new Number(txt2.value);
-  iNumber1 ^= iNumber2;
-  iNumber2 ^= iNumber1;
-  iNumber1 ^= iNumber2;
-	txt1.value = iNumber1;
-	txt2.value = iNumber2;
+	txt1.value ^= txt2.value;
+	txt2.value ^= txt1.value;
+	txt1.value ^= txt2.value;
 }
 </script>
 
